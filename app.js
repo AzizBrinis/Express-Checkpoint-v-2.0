@@ -16,7 +16,7 @@ const hours = new Date().getHours();
 const day = new Date().getDay();
 
 const MiddleWare = (req,res,next) => {
-  if(day == 0 || day ===6 || hours >=18 || hours <=8){
+  if(day == 0 || day ===6 || hours >=17 || hours <=9){
     res.render("no-work")
   }
   next();
